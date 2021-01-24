@@ -7,7 +7,7 @@ apply from: "$rootDir/duplication.gradle"
 
 
 afterEvaluate {
-    testReleaseUnitTest.enabled(false)
+    testReleaseUnitTest.enabled(true)
     lint.enabled(false)
     lintDebug.dependsOn("checkDuplication")
     testDebugUnitTest.dependsOn("lintDebug")
