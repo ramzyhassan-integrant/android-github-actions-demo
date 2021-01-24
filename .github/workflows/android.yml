@@ -25,7 +25,7 @@ jobs:
       uses: dvdandroid/action-android-lint@master
       with:
           github_token: ${{ secrets.TOKEN_GITHUB }}
-          lint_xml_file: app/build/reports/lint-results.xml
+          lint_xml_file: app/build/reports/lint-results-debug.xml
     - name: Android Test Report
       uses: asadmansr/android-test-report-action@v1.2.0
       if: ${{ always() }} # IMPORTANT: run Android Test Report regardless
